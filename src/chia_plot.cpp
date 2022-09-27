@@ -273,6 +273,7 @@ int main(int argc, char** argv)
 		"D, directout", "Create plot directly in finaldir (default = false)", cxxopts::value<bool>(directout))(
 		"Z, unique", "Make unique plot (default = false)", cxxopts::value<bool>(make_unique))(
 		"K, rmulti2", "Thread multiplier for P2 (default = 1)", cxxopts::value<int>(phase2::g_thread_multi))(
+		"R, rtdiv", "Number of read threads divider (default = 4)", cxxopts::value<int>(g_read_thread_divider))(
 		"version", "Print version")(
 		"help", "Print help");
 	
